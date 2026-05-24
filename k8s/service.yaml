@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260524-135156-6fgo81dya15r-service
+spec:
+  selector:
+    app: enterprise-system-20260524-135156-6fgo81dya15r
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
